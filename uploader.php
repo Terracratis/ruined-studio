@@ -1,5 +1,5 @@
 <?php
-	include('../ruinedstudio.php');
+	include('ruinedstudio.php');
 	$instudio = true;
 	$DB = _database_connect( $config_mysql['host'], $config_mysql['database'], $config_mysql['username'], $config_mysql['password'] );
 	$SQL = $DB->prepare("SELECT * FROM studio_settings WHERE settings = ? LIMIT 1");
